@@ -8,7 +8,7 @@ pipeline{
                 checkout scm
             }
         }
-        stage('Builds'){
+        stage('Build'){
             steps{
                  echo 'Build'
                 sh 'mvn clean install'
